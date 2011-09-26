@@ -1,3 +1,12 @@
 body{
-	background-color:#808080;
+	font-size: 2em;
 }
+
+p{
+	color:red:
+}
+
+p#p_foo{
+	text-shadow: 1px 1px 3px #000;
+}
+
