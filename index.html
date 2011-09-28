@@ -4,20 +4,37 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>文章構造化ステップ</title>
 		<style type=text/css>
+		body{
+			background-color: #888888;
+		}
+		#all{
+			background-color: #ffffff;
+			width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 		#main{
 			position: relative;
 			border-style: solid;
 			border-width: 2px;
 			border-color: #0000ff;
 		}
-		#midokoro{
-			position: absolute;
-			top:300px;
-			left:300px;
+		#p_link{
+			float: left;
+			width: 15em;
 			border-style: solid;
 			border-width: 2px;
 			border-color: #ff0000;
+		}
+		#midokoro{
+			float:right;
 			width: 18em;
+			border-style: solid;
+			border-width: 2px;
+			border-color: #ff0000;
+		}
+		#sec_a{
+			clear:both;
 		}
 		#midokoro h1{
 			margin-top: 0px;
@@ -111,7 +128,7 @@
 	</head>
 
 <body>
-	
+<div id="all">	
 <article>
 	
 <header id="p_top">
@@ -126,6 +143,7 @@
 	</nav>
 </header>
 <div id="main">
+<div id="p_link">
 <aside>
 	<nav>
 		<ol>
@@ -135,6 +153,7 @@
 		</ol>
 	</nav>
 </aside>
+</div>
 <div id="midokoro">
 <aside>
 <h1>第一夜のみどころ</h1>
@@ -145,6 +164,7 @@
 </aside>
 </div>
 
+<div id="sec_a">
 <section>
 <h1 id="h_honbun">こんな夢を見た。</h1>
 <p class="honbun">
@@ -194,7 +214,9 @@
 </p>
 
 </section>
+</div>
 
+<div id="kaisetsu"
 <aside>
 <h1 id="h_midashi">wiki</h1>
 <p id="hosoku">
@@ -202,6 +224,8 @@
 </p>
 </aside>
 </div>
+</div>
+<div id="ft"
 <footer>
 	<nav>
 		<a href="a.html">このサイトについて</a>
@@ -212,6 +236,7 @@
 		本サイトは夏目漱石の「夢十夜」の紹介しています。
 	</p>
 </footer>
-
+</div>
+</div>
     </body>
 </html>
