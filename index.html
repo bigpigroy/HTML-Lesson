@@ -5,26 +5,40 @@
 		<title>文章構造化ステップ</title>
 		<style type=text/css>
 		body{
-			background-color: #888888;
+			background-color: #cccccc;
 		}
 		#all{
-			background-color: #ffffff;
+			background-color: #808000;
 			width: 900px;
 			margin-left: auto;
 			margin-right: auto;
 		}
-		#main{
-			position: relative;
-			border-style: solid;
-			border-width: 2px;
-			border-color: #0000ff;
+		header{
+			background-color: #ff8000;
 		}
+		#h_nav{
+			background-color: #ff0000;
+			text-align: right;
+		}
+		#h_nav a{
+			margin-left: 0.5em;
+			margin-right: 0.5em;
+		}
+		#s_bar{
+			float:left;
+			width:25%;
+			background-color: #808000;
+		}
+		#main{
+			float:left;
+			width:75%;
+			background-color: #8080ff;
+			padding-top:2em;
+		}
+
 		#p_link{
 			float: left;
 			width: 15em;
-			border-style: solid;
-			border-width: 2px;
-			border-color: #ff0000;
 		}
 		#midokoro{
 			float:right;
@@ -32,21 +46,41 @@
 			border-style: solid;
 			border-width: 2px;
 			border-color: #ff0000;
-		}
-		#sec_a{
-			clear:both;
+			margin-bottom: 2em;
+			margin-right: 2em;
+			
 		}
 		#midokoro h1{
 			margin-top: 0px;
 			padding-left: 0.5em;
 			background-color: #ff0000;
 			color: #ffffff;
-			font-size: 1.2em;
+			font-size: 1.4em;
 			font-weight: normal;
 		}
 		#midokoro p{
 			padding-left:1.5em;
 			padding-right: 1.5em;
+		}
+		#story{
+			clear:both;
+			
+			columns:20em 3;
+			-moz-columns:18em 3;
+			-webkit-columns: 18em 3;
+			column-rule:1px solid #808080;
+			-moz-column-rule:1px solid #808080;
+			-webkit-column-rule:1px solid #808080;
+		}
+		#kaisetsu{
+			border-style: solid;
+			border-width: 1px;
+			border-color: #000080;
+			margin-left: 2em;
+			margin-right: 2em;
+			margin-bottom: 2em;
+			padding-left: 2em;
+			padding-right: 2em;
 		}
 /*********
 			body{
@@ -123,7 +157,15 @@
 				margin-left:2em;
 				font-size:1.2em;
 			}
-**********/		
+**********/	
+		.honbun{
+			text-indent: 1em;
+		}	
+		#ft{
+			clear:both;
+			background-color:#00ffff;
+			text-align: center;
+		}
 		</style>
 	</head>
 
@@ -142,6 +184,11 @@
 		<a href="3.html">第三夜</a>
 	</nav>
 </header>
+
+<div id="s_bar">
+	<p>ここがサイドバーになります</p>
+</div>
+
 <div id="main">
 <div id="p_link">
 <aside>
@@ -164,7 +211,7 @@
 </aside>
 </div>
 
-<div id="sec_a">
+<div id="story">
 <section>
 <h1 id="h_honbun">こんな夢を見た。</h1>
 <p class="honbun">
@@ -220,6 +267,7 @@
 <aside>
 <h1 id="h_midashi">wiki</h1>
 <p id="hosoku">
+<img src="yume.jpeg" alt"香椎由宇" title="香椎由宇" width="300" height="111">
 『夢十夜』（ゆめじゅうや）は、夏目漱石著の小説。1908年（明治41年）7月25日から8月5日まで『朝日』で連載された。
 </p>
 </aside>
